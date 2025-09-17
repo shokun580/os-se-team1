@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #ffe4ec, #ffd6e7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      position: relative;
+    }
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #ec407a;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 18px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .back-button:hover {
+      background-color: #d81b60;
+    }
+    .profile {
+      background: white;
+      padding: 50px 60px;
+      border-radius: 30px;
+      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      max-width: 950px;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    .profile img {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 8px solid #ec407a;
+      margin-right: 50px;
+      transition: transform 0.4s;
+    }
+    .profile img:hover {
+      transform: scale(1.05);
+    }
+    .profile .details {
+      text-align: left;
+    }
+    .profile h2 {
+      color: #d81b60;
+      font-size: 42px;
+      margin: 0;
+    }
+    .profile p {
+      color: #444;
+      font-size: 24px;
+      margin: 10px 0;
+    }
+    .profile .info {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    .profile .info p {
+      margin: 8px 0;
+    }
+    .profile .info strong {
+      color: #ec407a;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <a href="/" class="back-button">← Back to Home</a>
+  <div class="profile">
+    <img src="palm.jpg" alt="Profile Picture">
+    <div class="details">
+      <h2>Saruta Saisuwan</h2>
+      <p>Support Manager</p>
+      <div class="info">
+        <p><strong>Age:</strong> 21</p>
+        <p><strong>Email:</strong> 66160375@go.buu.ac.th</p>
+        <p><strong>Phone:</strong> 098-294-2315</p>
+        <p><strong>Major:</strong> Software Engineer</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
