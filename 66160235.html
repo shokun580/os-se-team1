@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Information</title>
+    <style>
+        /* ตั้งค่าพื้นฐานสำหรับ body เช่น ฟอนต์ สีพื้นหลัง และการจัดตำแหน่งให้อยู่ตรงกลาง */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* สไตล์สำหรับปุ่ม "Back" ที่มุมซ้ายบน */
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #0078d7;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* เปลี่ยนสีปุ่ม "Back" เมื่อเอาเมาส์ชี้ */
+        .back-button:hover {
+            background-color: #005bb5;
+        }
+
+        /* สไตล์สำหรับการ์ดที่แสดงข้อมูล */
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            max-width: 800px;
+            overflow: hidden;
+        }
+
+        /* สไตล์สำหรับรูปภาพในการ์ด */
+        .card img {
+            width: 50%; /* กำหนดให้รูปภาพครอบครองพื้นที่ครึ่งหนึ่งของการ์ด */
+            height: auto;
+            object-fit: cover; /* ปรับขนาดรูปภาพให้พอดีโดยไม่เสียสัดส่วน */
+        }
+
+        /* สไตล์สำหรับเนื้อหาในการ์ด */
+        .card-content {
+            padding: 2rem;
+            width: 50%; /* กำหนดให้เนื้อหาครอบครองพื้นที่ครึ่งหนึ่งของการ์ด */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* จัดเนื้อหาให้อยู่ตรงกลางในแนวตั้ง */
+        }
+
+        /* สไตล์สำหรับหัวข้อ */
+        h1, h2 {
+            color: #0078d7;
+        }
+
+        /* สไตล์สำหรับแต่ละบรรทัดของข้อมูล */
+        .info {
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- ปุ่ม "Back" สำหรับกลับไปยังหน้าอื่น -->
+    <a href="index.html" class="back-button">Back</a>
+
+    <!-- การ์ดที่แสดงข้อมูลส่วนตัว -->
+    <div class="card">
+        <!-- รูปภาพโปรไฟล์ -->
+        <img src="66160235.jpg" alt="Profile Picture">
+        
+        <!-- เนื้อหาข้อมูลส่วนตัว -->
+        <div class="card-content">
+            <h2>About Me</h2>
+            <div class="info">
+                <strong>Name:</strong> พชรธร พิมเงิน
+            </div>
+            <div class="info">
+                <strong>Role:</strong> Support Engineer
+            </div>
+            <div class="info">
+                <strong>Motto:</strong> ทุกอย่างทำเพื่อแฟน🤣🤣
+            </div>
+            <div class="info">
+                <strong>Contact:</strong> 66160235@go.buu.ac.th
+            </div>
+        </div>
+    </div>
+</body>
+</html>
